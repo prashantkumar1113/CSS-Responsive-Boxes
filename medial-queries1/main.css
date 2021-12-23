@@ -2,27 +2,34 @@ body {
     background: blanchedalmond;
 }
 
-*:not(body, html) {
+/* *:not(body, html) {
     border: 1px solid dodgerblue;
-}
+} */
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+.container div {
+    background-color: lightblue;
+    border: 1px solid dodgerblue;
+    margin: 5px;
 }
 .a {
-    min-width: 100%;
-    min-height: 100px;
+    min-width: 95%;
+    min-height: 200px;
 }
 .b {
-    min-width: 79%;
-    min-height: 100px;
+    min-width: 70%;
+    min-height: 200px;
 }
 .c {
     min-width: 20%;
-    min-height: 100px;
+    min-height: 200px;
 }
 
 @media (min-width: 600px) {
