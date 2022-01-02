@@ -1,3 +1,56 @@
 body {
-  background: peachpuff;
+    background: peachpuff;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+.container div:not(.b-container) {
+    background-color: lightblue;
+    border: 1px solid dodgerblue;
+    margin: 5px;
+}
+.a {
+    flex-grow: 3;
+    min-width: 95%;
+    height: 100px;
+    /* order: 1; */
+}
+.b-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: space-between;
+}
+.b,
+.c,
+.d,
+.e,
+.f,
+.g {
+    min-width: 30%;
+    min-height: 50px;
+}
+.h {
+    min-height: 200px;
+    min-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .b-container {
+        min-width: 70%;
+    }
+    .h {
+        min-width: 28%;
+    }
 }
